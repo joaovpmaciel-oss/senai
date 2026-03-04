@@ -1,8 +1,10 @@
-nota1 = float(input("insira a primeira nota"))
-nota2 = float(input("insira a segunda nota"))
-nota3 = float(input("insira a terceira nota"))
-nota4 = float(input("insira a quarta nota"))
-media=(nota1 + nota2 + nota3 + nota4)/4
+contador=0
+soma=0
+while contador < 4:
+    contador+= 1
+    nota= float(input(f"insira o {contador} nota"))
+    soma+=nota
+media= soma/contador
 print("a media das notas: ", media)
 if media >= 7:
     print("aluno esta aprovado")

@@ -1,12 +1,8 @@
-contador=0
-soma=0
-while contador < 4:
-    contador+= 1
-    nota= float(input(f"insira o {contador} nota"))
-    soma+=nota
-media= soma/contador
-print("a media das notas: ", media)
-if media >= 7:
-    print("aluno esta aprovado")
-else:
-    print("aluno esta reprovado")
+nome = input ("digite seu nome")
+idade = int (input("digite sua idade:"))
+
+while idade > 120 or idade < 0:
+    idade = int(input("idade(anos completos - ate 120 anos)"))
+    dias_vida = idade * 365
+    print(f"{nome}, você viveu {dias_vida}")
+    
